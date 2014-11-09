@@ -22,10 +22,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
  		<!--<script src="https://raw.github.com/fabioquarantini/formchimp/master/jquery.formchimp.js"></script>    -->
     <script src="js/jquery.formchimp.js">
-   <script src="js/main.js"></script>
-   
-   <!-- Google Analytics -->
- 		<script>
+ 		<script src="js/main.js"></script>
+    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -40,6 +38,7 @@
   
          
 	 <body>
+   
         <div class="container">
             <div class="intro-text">             
                 <div class="intro-heading"> IoTFriday </div>
@@ -60,11 +59,27 @@
       <div class="row">
        <ul class="list-inline social-buttons">
           <li><a href="http://twitter.com/iotfriday"><i class="fa fa-twitter"></i></a>
+           
        </ul>
-      </div>            
+       
+       
+      </div>
+      
+      <div class="row"> 
+      <ul class="list-inline social-share-buttons">
+      <a class="twitter-share-button"  data-text="Selected news in your inbox every friday morning #IoT #Werable #HwStartup iotfriday.com"
+  href="https://twitter.com/share">
+Tweet
+</a>
+<script type="text/javascript">
+window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+</script>
+</ul>
+      </div> 
+                
             <div class="row"> 
             <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <a href="//www.iubenda.com/privacy-policy/359056" class="iubenda-white iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                         </li>
                     </ul>
                     <span class="copyright">Copyright &copy; IoTFriday 2014</span>
@@ -73,5 +88,7 @@
      </div>
        
 </html>
+
+
 
 
