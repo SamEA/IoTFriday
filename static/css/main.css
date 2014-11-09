@@ -89,7 +89,7 @@ body .intro-text .intro-heading {
     margin-bottom: 25px;
     color: #fed136;
     font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500; 
     line-height: 50px;
 }
@@ -176,7 +176,11 @@ footer ul.quicklinks {
 }
 
 ul.social-buttons {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+}
+
+ul.social-share-buttons {
+    margin-bottom: 50px;
 }
 
 ul.social-buttons li a {
@@ -382,5 +386,4 @@ li label {
 		left: 0;
 	}
 }
-
 
