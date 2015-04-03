@@ -96,7 +96,7 @@ body .intro-text .intro-heading {
 
 @media(min-width:768px) {
     body .intro-text {
-        padding-top: 100px;
+        padding-top: 30px;
         padding-bottom: 30px;
     }
     
