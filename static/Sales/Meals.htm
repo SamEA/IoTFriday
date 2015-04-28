@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Gourmet Republik</title>
+       <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+      <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+     chart: {
+    type: 'line',
+    zoomType: 'xy'
+    },
+        title: {
+            text: 'Weekly Sales Meals',
+            x: -20 //center
+        },
+        
+        xAxis: {
+            categories: ['05 Apr 2015',	'12 Apr 2015',	'19 Apr 2015',
+            	'26 April 2015',	'03 May 2015',	'10 May 2015',	'17 May 2015', 
+              '24 May 2015', '31 May 2015', '07 Jun 2015', '14 Jun 2015', '21 Jun 2015', '28 Jun 2015',
+               '05 Jul 2015', '12 Jul 2015', '19 Jul 2015', '26 Jul 2015', '02 Aug 2015', '09 Aug 2015', 
+               '16 Augu 2015', '23 Aug 2015', '30 Aug 2015', '06 Sept 2015',
+             '13 Sept 2015', '20 Sept 2015', '27 Sept 2015', '04 Oct 2015', '11 Oct 2015', '18 Oct 2015', '25 Oct 2015', '01 Nov 2015']
+        },
+        yAxis: {
+            title: {
+                text: 'Sales per week'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ' unit'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Butter Chicken',
+            data: [115,	70,	76,	26   ]
+        }, {
+            name: 'Lamb Rogan Josh',
+            data: [45,	57,	41,	17]
+        }, {
+            name: 'Apricot Chicken Tagine',
+            data: [  ]
+        }, {
+            name: 'Chicken Madras',
+            data: [ 51,	47,	40,	8  ]
+        },  {
+            name: 'Thai Green Curry',
+            data: [  ]
+        }
+        , {
+            name: 'Beef Burguignon',
+            data: [20,	24,	37,	17  ]
+        }, {
+            name: 'Chicken Cacciatore',
+            data: [31,	28,	41,	30]
+        }, {
+            name: 'Chicken Mustard',
+            data: [27,	17,	25,	23   ]
+        },
+         {
+            name: 'Sweet and Sour Pork',
+            data: [ 12,	17,	27,	24  ]
+        }, {
+            name: 'Beef Stroganoff',
+            data: [40,	36,	64,	37  ]
+        }, {
+            name: 'Beef Satay',
+            data: [48,	39,	55,	42    ]
+        }
+        ]
+    });
+});
+		</script>
+	</head>
+	<body>
+  
+     <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Gourmet Republik</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="sales.htm">Sales</a>
+                    </li>
+                    <li>
+                        <a href="Meals.htm">Meals</a>
+                    </li>
+                                       
+                    <li>
+                        <a href="pasta.htm">Pasta</a>
+                    </li>  
+                    <li>
+                        <a href="pizza.htm">Pizza</a>
+                    </li>
+                    <li>
+                        <a href="piesandquiches.htm">Pies and Quiches</a>
+                    </li>
+                      <li>
+                        <a href="tarts.htm">Sweet Tarts</a>
+                    </li>
+                     
+                  
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+<script src="./js/highcharts.js"></script>
+<script src="./js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Gourmet Republik</title>
+       <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+      <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<style type="text/css">
+${demo.css}
+		</style>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Weekly Sales Pasta',
+            x: -20 //center
+        },
+        
+        xAxis: {
+             categories: ['05 April 2015',	'12 April 2015', '19 April 2015',	'26 April 2015'   ]
+        },
+        yAxis: {
+            title: {
+                text: 'Sales per week'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ' unit'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Beef Lasagna',
+            data: [41,	39,	57,	52]
+        }, {
+            name: 'Meatballs',
+            data: [60,	47,	78,	48]
+        }, {
+            name: 'Gnocchi Arrabbiata',
+            data: [28,	19,	38,	30]
+        }, {
+            name: 'Pork Lasagna',
+            data: [28,	20,	29,	26]
+        }
+        , {
+            name: 'Tortellini',
+            data: [29,	22,	39,	44]
+        }, {
+            name: 'Parmigiana',
+            data: [26,	18,	33,	11]
+        }, {
+            name: 'Kale Cannelloni',
+            data: [16,	16,	18,	19]
+        } , {
+            name: 'Pumpkin Cannelloni',
+            data: [23,	20,	24,	17]
+        }
+        ]
+    });
+});
+		</script>
+	</head>
+	<body>
+  
+     <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Gourmet Republik</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                 <li>
+                        <a href="sales.htm">Sales</a>
+                    </li>
+                    <li>
+                        <a href="meals.htm">Meals</a>
+                    </li>
+                                       
+                    <li>
+                        <a href="pasta.htm">Pasta</a>
+                    </li>  
+                    <li>
+                        <a href="pizza.htm">Pizza</a>
+                    </li>
+                    <li>
+                        <a href="piesandquiches.htm">Pies and Quiches</a>
+                    </li>
+                      <li>
+                        <a href="tarts.htm">Sweet Tarts</a>
+                    </li>
+                     
+                  
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+<script src="./js/highcharts.js"></script>
+<script src="./js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
